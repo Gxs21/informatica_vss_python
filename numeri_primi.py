@@ -27,4 +27,4 @@ while n<=0:
     n=int(input("inserire un numero: "))
     
 print(primi (n))
-prin("hello world")
+print("hello world")
