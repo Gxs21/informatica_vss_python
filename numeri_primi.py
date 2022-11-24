@@ -26,5 +26,4 @@ n=0
 while n<=0:
     n=int(input("inserire un numero: "))
     
-print(primi (n))n
-rans ''
+print(primi (n))
