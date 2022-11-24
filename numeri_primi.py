@@ -28,5 +28,5 @@ while n<=0:
     
 print(primi (n))
 print("hello world")
-while 0=0:
-    print ("say hello baby")
+while 0==0:
+    print("say hello baby")
