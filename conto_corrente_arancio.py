@@ -10,8 +10,8 @@ def versamento_funzione (conto):
     versamenti_tot+=versamento
     contatore_versamenti=0
     contatore_versamenti+=1
-    return conto, contatore_versamenti, versamenti_tot
-
+    lista_versamento= (conto, contatore_versamenti, versamenti_tot)
+        return lita_versamento
 conto=100
 
-print(versamento_funzione(conto))yy
+print(versamento_funzione(conto))
