@@ -14,4 +14,4 @@ def versamento_funzione (conto):
 
 conto=100
 
-print(versamento_funzione(conto))
+print(versamento_funzione(conto))yy
