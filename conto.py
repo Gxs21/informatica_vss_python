@@ -35,4 +35,4 @@ class Conto:
             self.saldo-=prel
         self.numOper+=1
     def visualizza (self):
-        print ('Numero Conto', self.numeroConto,' Nominativo ',self.getNumeroConto())
+        print ('il numero di conto è: ', self.numeroConto,' il nominativo del conto è:  ',str(self.nominativo), "il saldo ammonta a: ", self.saldo, " il numero di operazioni effettuate ammonta a: ", self.numOper)
