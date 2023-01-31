@@ -2,8 +2,8 @@ class ContoBancario:
     def __init__(self,nr,n,s,np):
         self.nr_conto = nr
         self.nominativo = n
-        self.saldo = 0
-        self.numero_operazioni = 0
+        self.saldo = s
+        self.numero_operazioni = np
 
     def getNrConto(self):
         return self.nr_conto
