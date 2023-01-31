@@ -7,11 +7,11 @@ def main():
     while True:
         n=str(input("per prelevare inserisci:  p , per versare v: "))
         if n=="p":
-            Prelievo=int(input("inserisci la somma he vuoi prelevare"))
-        if Prelievo<conto.saldo:
-            conto.prelievo (Prelievo,)
+            Prelievo=int(input("inserisci la somma he vuoi prelevare: "))
+            if Prelievo<conto.saldo:
+                conto.prelievo (Prelievo,)
         if n=="v":
-            Versamento=int(input("inserisci la somma che vuoi versare"))
+            Versamento=int(input("inserisci la somma che vuoi versare: "))
             conto.versamento (Versamento)
         conto.stampa_conto()
 main ()
