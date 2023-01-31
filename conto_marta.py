@@ -1,5 +1,5 @@
 class ContoBancario:
-    def _init_(self,nr,n,s,np):
+    def __init__(self,nr,n,s,np):
         self.nr_conto = nr
         self.nominativo = n
         self.saldo = 0

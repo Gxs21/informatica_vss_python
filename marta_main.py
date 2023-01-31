@@ -1,16 +1,19 @@
-from ContoBancario import ContoBancario
+from conto_marta import ContoBancario
 def main():
-    
+    numeroConto= int(input("inseire il voostro numero di conto: "))
     nominativo=input("Nominativo: ")
-    print("benvenut*",str(nominativo), "nel tuo conto corrente! vorresti prelevare una quota (1) o versare una quota (2)?")
+    print("benvenut*",nominativo, "nel tuo conto corrente! vorresti prelevare una quota (1) o versare una quota (2)?")
+    scelta=int(input())
     saldo=int(input("inserire il saldo iniziale: "))
-scelta=int(input())
-if (scelta==1):
-    soldi=int(input("soldi da prelevare: "))
-    ContoBancario.prelievo (soldi)
-if (scetla==2):
-        ContoBancario.versamento (soldi)
+    
+    contoBanc=ContoBancario(numeroConto, nominativo, saldo, 0 )
+    if (scelta==1):
+        soldi=int(input("soldi da prelevare: "))
+        contoBanc.prelievo (soldi)
+    if (scelta==2):
+        soldi=int(input("soldi da prelevare: "))
+        contoBanc.versamento (soldi)
 
-ContoBancario.
+    contoBanc.stampa ()
 main()
 
