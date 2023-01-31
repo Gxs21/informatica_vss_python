@@ -1,9 +1,9 @@
 class ContoBancario:
-    def __init__(self,nr_conto,nominativo,saldo=0):
-        self.nr_conto=nr_conto
-        self.nominativo=nominativo
-        self.saldo=saldo
-        self.num_operazioni=0
+    def __init__(self,n_conto,nom,sal, n_op):
+        self.nr_conto=n_conto
+        self.nominativo=nom
+        self.saldo=sal
+        self.num_operazioni=n_op
 
     def versamento(self,importo):
         self.saldo += importo
