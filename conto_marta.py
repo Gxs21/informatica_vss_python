@@ -17,13 +17,13 @@ class ContoBancario:
         self.nominativo=n
 
     def versamento(self, soldi):
-        self.saldo= self.saldo + soldi
-        self.numero_operazioni= self.numero_operazioni +1
+        self.saldo+= soldi
+        self.numero_operazioni+=1
 
     def prelievo(self, soldi):
         if(self.saldo>=soldi):
-            self.saldo= self.saldo - soldi
-            self.numero_operazioni=self.numero_operazioni +1
+            self.saldo-= soldi
+            self.numero_operazioni+=1
         else:
             print("non puoi farlo, mi dispiace")
 
