@@ -5,12 +5,12 @@ def main():
     sal=int(input("iserisci il saldo attuale: "))
     conto = ContoBancario (n_conto, nom, sal, 0)
     while True:
-        n=str(input("per prelevare inserisci:  p , per versare v: "))
-        if n=="p":
+        n=str(input("per prelevare inserisci:  prel , per versare vers: "))
+        if n=="prel":
             Prel=int(input("inserisci la somma he vuoi prelevare: "))
             if Prel<conto.saldo:
                 conto.prelievo (Prel)
-        if n=="v":
+        if n=="vers":
             Vers=int(input("inserisci la somma che vuoi versare: "))
             conto.versamento (Vers)
         conto.visualizza()
