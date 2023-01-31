@@ -13,5 +13,5 @@ def main():
         if n=="v":
             Vers=int(input("inserisci la somma che vuoi versare: "))
             conto.versamento (Vers)
-        conto.stampa_conto()
+        conto.visualizza()
 main ()
