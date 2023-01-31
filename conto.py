@@ -24,7 +24,7 @@ class Conto:
         self.saldo = sal
 
     def setNumerOper(self, numOp):
-        self.numeroConto = numOp
+        self.numOper = numOp
 
     def versamento (self, vers):
         self.saldo+=vers
