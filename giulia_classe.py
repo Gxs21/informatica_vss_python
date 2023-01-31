@@ -24,8 +24,10 @@ class Contobancario:
     
     def versamento(self,da_versare):
         self.saldo += da_versare 
+        self.operazioni+=1
     def prelievo(self,da_prelevare):
         if (self.saldo>0):
             self.saldo-=da_prelevare
+            self.operazioni+=1
     def stampa_conto (self):
         print("il vostro numero di conto risulta essere: ", self.nr_conto, "il nome del vostro conto risulta essere: ", self.nominativo, "il vostro saldo risulta essere: ", self.saldo, "il numero di operazioni effettuate risulta essere: ", self.operazioni  )
