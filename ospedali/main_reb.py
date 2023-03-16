@@ -11,7 +11,7 @@ def main():
     o1=Ospedale("Vitofazzi","Lecce")
     print(p1.numeroletto)
     o1.aggiungiPaziente(p2)
-    o1.dimettiPaziente(p2)   
-    o1.visualizzaPazienti
-
+    o1.dimettiPaziente(2)   
+    o1.visualizzaPazienti("verde")
+    
 main()
