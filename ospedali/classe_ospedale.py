@@ -40,7 +40,7 @@ class ospedale:
     
     def modificaCodicePaziente (self, cognome):
         for x in self.listaPazienti:
-            if x.getCognome == cognome:
+                """if x.getCognome == cognome:"""
                 x.setCodiceRicovero(input("inserire il nuovo codice: "))
                 """print ("il nuovo codice paziente è:" + x.getCodiceRicovero)"""
     def dimettiPaziente (self,numLetto):
