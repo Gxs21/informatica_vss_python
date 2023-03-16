@@ -36,9 +36,9 @@ class Ospedale:
             print("L'OSPEDALE E' PIENO")
             
     def modificaCodicePaziente(self,c,cr):
-        
+        Trovato="no"
         for x in self.listapazienti:
-            Trovato="no"
+            
             if x.getcognome()==c:    
                 x.setcodicericovero(cr) 
                 Trovato="si"
@@ -46,15 +46,15 @@ class Ospedale:
             print("IL PAZIENTE NON ESISTE")
         
     def dimettiPaziente(self,nl):
-        
+        Trovato=False
         for x in self.listapazienti:
-            Trovato=False
+            
             if x.getnumeroletto()==nl:
                 Trovato=True
-                self.listapazienti.remove(x)
-            if Trovato==True:
+                self.listapazienti.remove(x) 
+
                 print("IL PAZIENTE E' STATO DIMESSO")
-        else:
+        if Trovato==False:
             print("IL PAZIENTE NON ESISTE")
                 
     def visualizzaPazienti(self,cr):
