@@ -57,6 +57,6 @@ class Ospedale:
                 
     def visualizzaPazienti(self,cr):
         for x in self.listapazienti:
-            if x.getcodicericovero==cr:
+            if x.getcodicericovero()==cr:
                 x.toString()
 
