@@ -9,12 +9,12 @@ def main():
     p5=Paziente(5,"Rossi","Francesca","Frattura costole","Giallo")
 
     o1=Ospedale("Vitofazzi","Lecce")
-    print(p1.numeroletto)
+    
     o1.aggiungiPaziente(p2)
     o1.aggiungiPaziente(p3)
     o1.aggiungiPaziente(p4)
     o1.aggiungiPaziente(p5)
-    o1.modificaCodicePaziente("Verdi", "Verde")
+    o1.modificaCodicePaziente("Verdi", "Blu")
     o1.visualizzaPazienti("Verde")
     o1.dimettiPaziente(2)
     
