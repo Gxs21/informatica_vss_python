@@ -36,8 +36,9 @@ class Ospedale:
             print("L'OSPEDALE E' PIENO")
             
     def modificaCodicePaziente(self,c,cr):
-        Trovato="no"
+        
         for x in self.listapazienti:
+            Trovato="no"
             if x.getcognome()==c:    
                 x.setcodicericovero(cr) 
                 Trovato="si"
