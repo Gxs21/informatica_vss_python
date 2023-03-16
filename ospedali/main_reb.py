@@ -11,10 +11,10 @@ def main():
     o1=Ospedale("Vitofazzi","Lecce")
     print(p1.numeroletto)
     o1.aggiungiPaziente(p2)
-    """print(p2.codicericovero)
+    print(p2.codicericovero)
     p2.toString()
     o1.dimettiPaziente(2)
-     """
-    o1.visualizzaPazienti("verde")
+    print(p2.getcodicericovero())
+    """o1.visualizzaPazienti("verde")"""
     
 main()
