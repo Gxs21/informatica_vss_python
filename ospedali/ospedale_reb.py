@@ -55,8 +55,8 @@ class Ospedale:
             else:
                 print("IL PAZIENTE NON ESISTE")
                 
-    def visualizzaPazienti(self,cr):
+    def visualizzaPazienti(self,cr,p2):
         for x in self.listapazienti:
             if x.getcodicericovero()==cr:
-                x.toString()
+                p2.toString()
 
