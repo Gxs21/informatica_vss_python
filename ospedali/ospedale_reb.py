@@ -42,8 +42,8 @@ class Ospedale:
             if x.getcognome()==c:    
                 x.setcodicericovero(cr) 
                 Trovato="si"
-            if Trovato=="no":
-                print("IL PAZIENTE NON ESISTE")
+        if Trovato=="no":
+            print("IL PAZIENTE NON ESISTE")
         
     def dimettiPaziente(self,nl):
         
@@ -54,8 +54,8 @@ class Ospedale:
                 self.listapazienti.remove(x)
             if Trovato==True:
                 print("IL PAZIENTE E' STATO DIMESSO")
-            else:
-                print("IL PAZIENTE NON ESISTE")
+        else:
+            print("IL PAZIENTE NON ESISTE")
                 
     def visualizzaPazienti(self,cr):
         for x in self.listapazienti:
