@@ -11,6 +11,7 @@ def main():
     ospedale1.aggiungiPazienti(paziente1)
     ospedale1.visualizzaPazienti()
     ospedale1.modificaCodicePaziente("sogno")
+    ospedale1.visualizzaPazienti()
 
 """ ospedale1.dimettiPaziente(1)
 

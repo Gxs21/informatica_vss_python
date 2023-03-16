@@ -40,18 +40,18 @@ class ospedale:
     
     def modificaCodicePaziente (self, cognome):
         for x in self.listaPazienti:
-                """if x.getCognome == cognome:"""
+            if x.getCognome() == cognome:
                 x.setCodiceRicovero(input("inserire il nuovo codice: "))
-                """print ("il nuovo codice paziente è:" + x.getCodiceRicovero)"""
+                print ("il nuovo codice paziente è:" + x.getCodiceRicovero)
     def dimettiPaziente (self,numLetto):
         for i in self.listaPazienti:
-            if i.getNumeroLetto==numLetto:
+            if i.getNumeroLetto()==numLetto:
                 self.listaPazienti.erase(i)
                 print ("il paziente è stato dimesso con successo")
     
     def visualizzaPaziente (self, cR):
         for i in self.listaPazienti:
-            if i.getCodiceRicovero == cR:
+            if i.getCodiceRicovero() == cR:
                 i.toString()
                 
     
