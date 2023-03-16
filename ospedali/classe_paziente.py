@@ -35,7 +35,7 @@ class paziente:
     def getDiagnosi (self):
         return self.diagnosi
     
-    def getCodiceRIcovero (self):
+    def getCodiceRicovero (self):
         return self.codiceRicovero
     
     def toString(self):

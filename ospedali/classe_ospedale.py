@@ -36,9 +36,23 @@ class ospedale:
     def aggiungiPazienti (self, p):
         if len(self.listaPazienti)<self.capienzaMassima:
             self.listaPazienti.append (p)
+            print (" il paziente è stato aggiunto con successo")
     
     def modificaCodicePaziente (self, cognome):
         for i in self.listaPazienti:
-            i.setCodiceRicovero(input("inserire il nuovo codice: "))
+            if i.getCognome == cognome:
+                i.setCodiceRicovero(input("inserire il nuovo codice: "))
+                print ("il nuovo codice paziente è:" + i.getCodiceRicovero)
+    def dimettiPaziente (self,numLetto):
+        for i in self.listaPazienti:
+            if i.getNumeroLetto==numLetto:
+                self.listaPazienti.erase(i)
+                print ("il paziente è stato dimesso con successo")
+    
+    def visualizzaPaziente (self, cR):
+        for i in self.listaPazienti:
+            if i.getCodiceRicovero == cR:
+                i.toString()
+                
     
 
