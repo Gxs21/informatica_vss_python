@@ -38,6 +38,7 @@ class ospedale:
             self.listaPazienti.append (p)
     
     def modificaCodicePaziente (self, cognome):
-        self.listaPazienti[self.listaPazienti.index(cognome)].setCodiceRicovero(input("inserire il nuovo codice: "))
+        for i in self.listaPazienti:
+            i.setCodiceRicovero(input("inserire il nuovo codice: "))
     
 
