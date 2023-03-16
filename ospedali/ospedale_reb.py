@@ -45,6 +45,7 @@ class Ospedale:
             print("IL PAZIENTE NON ESISTE")
         
     def dimettiPaziente(self,nl):
+        Trovato=False
         for x in self.listapazienti:
             if x.getnumeroletto()==nl:
                 Trovato=True
