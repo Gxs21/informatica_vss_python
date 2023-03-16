@@ -15,6 +15,6 @@ def main():
     p2.toString()
     o1.dimettiPaziente(2)
      """
-    o1.visualizzaPazienti("verde",p2)
+    o1.visualizzaPazienti("verde")
     
 main()
