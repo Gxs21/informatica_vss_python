@@ -9,5 +9,5 @@ def main():
     p5=Paziente(5,"Rossi","Francesca","Frattura costole","Giallo")
 
     o1=Ospedale("Vitofazzi","Lecce")
- 
+    o1.aggiungiPaziente(p2)
     o1.dimettiPaziente(p2)   
