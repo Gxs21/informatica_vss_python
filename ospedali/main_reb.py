@@ -13,8 +13,9 @@ def main():
     o1.aggiungiPaziente(p2)
     print(p2.codicericovero)
     p2.toString()
-    o1.dimettiPaziente(2)
+    
     print(p2.getcodicericovero())
-    """o1.visualizzaPazienti("verde")"""
+    o1.visualizzaPazienti("Verde")
+    o1.dimettiPaziente(2)
     
 main()
