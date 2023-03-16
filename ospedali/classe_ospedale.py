@@ -46,7 +46,7 @@ class ospedale:
     def dimettiPaziente (self,numLetto):
         for i in self.listaPazienti:
             if i.getNumeroLetto()==numLetto:
-                self.listaPazienti.erase(i)
+                self.listaPazienti.remove(i)
                 print ("il paziente è stato dimesso con successo")
     
     def visualizzaPaziente (self, cR):

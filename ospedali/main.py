@@ -13,9 +13,9 @@ def main():
     ospedale1.modificaCodicePaziente("sogno")
     ospedale1.visualizzaPazienti()
 
-""" ospedale1.dimettiPaziente(1)
+    ospedale1.dimettiPaziente(1)
 
-    ospedale1.visualizzaPaziente("rosso")"""
+    ospedale1.visualizzaPaziente("rosso")
     
     
 
