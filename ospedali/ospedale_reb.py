@@ -49,7 +49,7 @@ class Ospedale:
             if x.getnumeroletto()==nl:
                 Trovato=True
                 self.listapazienti.remove(x)
-            if Trovato:
+            if Trovato==True:
                 print("IL PAZIENTE E' STATO DIMESSO")
             else:
                 print("IL PAZIENTE NON ESISTE")
