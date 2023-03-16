@@ -58,5 +58,5 @@ class Ospedale:
     def visualizzaPazienti(self,cr):
         for x in self.listapazienti:
             if x.getcodicericovero()==cr:
-                print (x.getcognome())
+                x.toString()
 

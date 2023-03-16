@@ -34,8 +34,8 @@ class Paziente:
         self.codicericovero=codricovero
         
     def toString(self):
-        print("Numero Letto: "+self.numeroletto)
-        print("Cognome: "+self.cognome)
+        print("Numero Letto: "+ str(self.numeroletto))
+        print("Cognome: "+ self.cognome)
         print("Nome: "+self.nome)
         print("Diagnosi: "+self.diagnosi)
         print("Codice Ricovero: "+self.codicericovero)
