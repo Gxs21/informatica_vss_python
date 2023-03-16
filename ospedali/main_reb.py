@@ -16,6 +16,8 @@ def main():
     o1.aggiungiPaziente(p5)
     o1.modificaCodicePaziente("Verdi", "Blu")
     o1.visualizzaPazienti("Verde")
-    o1.dimettiPaziente(2)
+    print(p2.codicericovero)
+    o1.dimettiPaziente(3)
+    """o1.dimettiPaziente(2)"""
     
 main()
