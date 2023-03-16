@@ -12,6 +12,6 @@ def main():
     print(p1.numeroletto)
     o1.aggiungiPaziente(p2)
     o1.dimettiPaziente(2)   
-    o1.visualizzaPazienti("verde")
+    o1.visualizzaPazienti(6)
     
 main()
