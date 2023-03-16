@@ -39,8 +39,8 @@ class paziente:
         return self.codiceRicovero
     
     def toString(self):
-        print("Numero Letto: "+self.numLetto)
-        print("Cognome: "+self.cognome)
-        print("Nome: "+self.nome)
-        print("Diagnosi: "+self.diagnosi)
-        print("Codice Ricovero: "+self.codiceRicovero)
+        print("Numero Letto: "+str(self.numLetto))
+        print("Cognome: "+str(self.cognome))
+        print("Nome: "+str(self.nome))
+        print("Diagnosi: "+str(self.diagnosi))
+        print("Codice Ricovero: "+str(self.codiceRicovero))
