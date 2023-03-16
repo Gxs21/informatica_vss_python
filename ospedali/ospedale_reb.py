@@ -28,7 +28,7 @@ class Ospedale:
             x.toString()
 
     def aggiungiPaziente (self,p):
-        size=len(self.lista)
+        size=len(self.listapazienti)
         if size<self.capienzamassima:
             self.listapazienti.append(p)
             print("IL PAZIENTE E' STATO AGGIUNTO")
