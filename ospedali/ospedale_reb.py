@@ -1,10 +1,10 @@
 class Ospedale:
 #costruttore    
     def __init__(self,nOspedale,c):
-            self.nomeospedale=nOspedale
-            self.citta=c
-            self.capienzamassima=20
-            self.listapazienti=list()
+        self.nomeospedale=nOspedale
+        self.citta=c
+        self.capienzamassima=20
+        self.listapazienti=list()
    
 #metodi
     def setNomeospedale (self, nOspedale):
@@ -19,7 +19,7 @@ class Ospedale:
         return self.nomeospedale
     def getCitta (self):
         return self.citta
-    def getNomeospedale (self):
+    def getnomeospedale (self):
         return self.nomeospedale
     def getListapazienti (self):
         return self.listapazienti
@@ -57,7 +57,7 @@ class Ospedale:
         if Trovato==False:
             print("IL PAZIENTE NON ESISTE")
                 
-    def visualizzaPazienti(self,cr):
+    def visualizzaPaziente(self,cr):
         for x in self.listapazienti:
             if x.getcodicericovero()==cr:
                 x.toString()
