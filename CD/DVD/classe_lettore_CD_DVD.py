@@ -25,8 +25,9 @@ class lettore:
     def add_supporto (self, s):
         if len(self.lista_CD_DVD) < self.dim_max:
             self.lista_CD_DVD.append(s)
+            print("il supporto è stato aggiunto con successo alla collezione!")
         else:
-            print ("la collezione è vuota!")
+            print ("la collezione è piena!")
 
     def get_nr_CD_DVD(self):
         if len(self.lista_CD_DVD) != 0:
