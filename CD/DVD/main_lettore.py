@@ -11,5 +11,6 @@ def main():
     print(lettore1.get_nr_CD_DVD())
     print(lettore1.add_to_pos(supporto2, 1))
     lettore1.kill_supporto(34)
-    lettore1.add_supporto(supporto1)
+    lettore1.add_supporto(supporto2)
+    lettore1.cerca_supporto("scatola nera")
 main()

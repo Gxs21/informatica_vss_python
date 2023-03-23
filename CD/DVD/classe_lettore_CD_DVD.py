@@ -60,7 +60,13 @@ class lettore:
             else:
                 return False
         
-    
+    def visualizza_supporti (self, autore):
+        for s in self.lista_CD_DVD:
+            if s.getAutore() == autore:
+              s.toString()
+            else:
+                return False
+     
         
 
 
