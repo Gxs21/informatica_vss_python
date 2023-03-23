@@ -43,15 +43,23 @@ class lettore:
             return "la collezione è piena!"
         
     def kill_supporto (self, codice):
-        for c in self.lista_CD_DVD:
-            if c.getCod_supporto() == codice:
-                self.lista_CD_DVD.remove(c)
+        for s in self.lista_CD_DVD:
+            if s.getCod_supporto() == codice:
+                self.lista_CD_DVD.remove(s)
                 print ("il supporto è stato rimosso correttamente dalla collezione!")
                 return True
             else:
                 print("il supporto non è stato trovato all'interno della collezione!")
                 return False
 
+    def cerca_supporto(self, titolo):
+        for s in self.lista_CD_DVD:
+            if s.getTitolo() == titolo:
+                print ("il supporto è stato trovato all'interno della collezione!")
+                return s
+            else:
+                return False
+        
     
         
 
