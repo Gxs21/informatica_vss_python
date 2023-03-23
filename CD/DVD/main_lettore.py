@@ -8,5 +8,5 @@ def main():
     print (supporto1.confronta(supporto2))
     lettore1= lettore("Re di Roma", 300)
     lettore1.add_supporto(supporto1)
-    
+    print(lettore1.get_nr_CD_DVD())
 main()
