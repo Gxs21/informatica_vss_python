@@ -9,5 +9,5 @@ def main():
     lettore1= lettore("Re di Roma", 300)
     lettore1.add_supporto(supporto1)
     print(lettore1.get_nr_CD_DVD())
-    print(lettore1.add_to_pos(supporto2,3))
+    print(lettore1.lista_CD_DVD)
 main()
