@@ -18,5 +18,24 @@ class lettore:
     
     def getDim_max (self):
         return self.dim_max
+    
+    def getLista_CD_DVD (self):
+        return self.lista_CD_DVD
+    
+    def add_supporto (self, s):
+        if len(self.lista_CD_DVD) < self.dim_max:
+            self.lista_CD_DVD.append(s)
+        else:
+            print ("la collezione è vuota!")
+
+    def get_nr_CD_DVD(self):
+        if len(self.lista_CD_DVD) != 0:
+            return len(self.lista_CD_DVD)
+        else: 
+            return -1
+        
+    
+        
+
 
 
