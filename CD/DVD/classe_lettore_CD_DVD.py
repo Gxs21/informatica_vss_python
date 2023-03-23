@@ -44,7 +44,7 @@ class lettore:
         
     def kill_supporto (self, codice):
         for c in self.lista_CD_DVD:
-            if c.getCod_supporto == codice:
+            if c.getCod_supporto() == codice:
                 self.lista_CD_DVD.remove(c)
                 print ("il supporto è stato rimosso correttamente dalla collezione!")
                 return True
