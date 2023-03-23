@@ -36,7 +36,7 @@ class lettore:
             return -1
         
     def add_to_pos(self, s, pos):
-        if len(self.lista_CD_DVD) != 0:
+        if len(self.lista_CD_DVD) < self.dim_max:
             self.lista_CD_DVD.insert(pos, s)
             return self.lista_CD_DVD
         else:
