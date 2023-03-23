@@ -53,4 +53,13 @@ class supporto:
         return self.anno_pubblicazione
 
     def toString (self):
-        print ("il codice supporto è: ", self.cod_supporto,  "\n il titolo è: ", self.titolo, "\n l'autore è: ", self.autore, "\n il numero di brani è: ", self.nr_brani, "\n la durata è: ", self.durata, "\n l'anno di pubblicazione è: ", self.anno_pubblicazione)
+        print ("il codice supporto è: ", self.cod_supporto,  "\n il titolo è: ", self.titolo, "\n l'autore è: ", self.autore, "\n il numero di brani è: ", self.nr_brani, "\n la durata è: ", self.durata, "\n l'anno di pubblicazione è: ", self.a)
+    
+    def confronta (self, s):
+        if self.durata > s.getDurata :
+            return self.titolo
+        elif self.durata < s.getDurata :
+            return s.getTitolo
+        else:
+            print ("i due supporti hanno la medesima durata!")
+
