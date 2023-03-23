@@ -38,9 +38,20 @@ class lettore:
     def add_to_pos(self, s, pos):
         if len(self.lista_CD_DVD) < self.dim_max:
             self.lista_CD_DVD.insert(pos, s)
-            return "il support è stato inserito correttamente nella collezione!"
+            return "il supporto è stato inserito correttamente nella collezione!"
         else:
             return "la collezione è piena!"
+        
+    def kill_supporto (self, codice):
+        for c in self.lista_CD_DVD:
+            if c.getCod_supporto == codice:
+                self.lista_CD_DVD.remove(c)
+                print ("il supporto è stato rimosso correttamente dalla collezione!")
+                return True
+            else:
+                print("il supporto non è stato trovato all'interno della collezione!")
+                return False
+
     
         
 
