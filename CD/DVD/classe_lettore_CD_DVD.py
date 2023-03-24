@@ -66,6 +66,12 @@ class lettore:
               s.toString()
             else:
                 return False
+            
+    def visualizza_collezione (self):
+        for s in self.lista_CD_DVD:
+            s.toString()
+        if len(self.lista_CD_DVD) == 0:
+            print ("collezione vuota")
      
         
 
